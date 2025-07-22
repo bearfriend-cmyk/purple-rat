@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Security;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
@@ -17,6 +18,17 @@ public class PlayerMoveScript : MonoBehaviour
     private Vector3 lastMoveDirection;
     private Vector3 newMoveDirection;
     private bool facingLeft;
+    private float default_speed;
+    private float max_speed;
+    private bool isDashing = false;
+    private bool dash_CD = false;
+
+    private float CD_TIME;
+
+    private float dash_speed;
+    private float last_speed;
+
+
     //private bool facingUp;
 
     void Awake()
@@ -27,7 +39,9 @@ public class PlayerMoveScript : MonoBehaviour
 
     void Start()
     {
-
+        default_speed = moveSpeed;
+        max_speed = default_speed * 1.85f;
+        dash_speed = default_speed * 5f;
     }
     // Update is called once per frame
     void Update()
@@ -40,13 +54,27 @@ public class PlayerMoveScript : MonoBehaviour
         ProcessInputs();
         Animate();
         Flip();
-
+        Dash();
+        
         
     }
 
+   
+
     void ProcessInputs()
     {
-    
+
+
+
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            if (!isDashing) { moveSpeed = max_speed; }
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        { if (!isDashing) { moveSpeed = default_speed; } }
+
         newMoveDirection.x = (Input.GetAxisRaw("Horizontal") * moveSpeed);
         newMoveDirection.y = (Input.GetAxisRaw("Vertical") * moveSpeed);
 
@@ -56,6 +84,9 @@ public class PlayerMoveScript : MonoBehaviour
         //Vector2(transform.position + (newMoveDirection * Time.deltaTime) * moveSpeed);
 
         rb.velocity = new Vector2(newMoveDirection.x * moveSpeed, newMoveDirection.y * moveSpeed);
+
+        anim.speed = (moveSpeed/default_speed);
+
     }
 
     void Animate()
@@ -86,6 +117,48 @@ public class PlayerMoveScript : MonoBehaviour
 
         // if (newMoveDirection.y > lastMoveDirection.y) facingUp = true;
         // else facingUp = false;
+    }
+
+    void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.Q) && !dash_CD)
+        {
+            dash_CD = true;
+            isDashing = true;
+            CD_TIME = 0.15f;
+
+            last_speed = moveSpeed;
+
+            moveSpeed = dash_speed;
+            
+
+            StartCoroutine(Dash_Time());
+            CD_TIME = 3f;
+
+            StartCoroutine(Cooldown());
+            StartCoroutine(Dash_Cooldown());
+        }
+    }
+
+    public IEnumerator Cooldown()
+    {
+        yield return new WaitForSeconds(CD_TIME);
+        CD_TIME = 0f;
+    }
+
+
+    public IEnumerator Dash_Time()
+    {
+        yield return new WaitForSeconds(CD_TIME);
+        isDashing = false;
+        moveSpeed = last_speed;
+
+    }
+
+    public IEnumerator Dash_Cooldown()
+    {
+        yield return new WaitForSeconds(CD_TIME);
+        dash_CD = false;
     }
 
     void Flip()
