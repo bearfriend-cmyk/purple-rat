@@ -23,6 +23,7 @@ public class PlayerMoveScript : MonoBehaviour
     private bool isDashing = false;
     private bool dash_CD = false;
 
+
     private float CD_TIME;
 
     private float dash_speed;
@@ -94,10 +95,13 @@ public class PlayerMoveScript : MonoBehaviour
         anim.SetFloat("MoveX", lastMoveDirection.x);
         anim.SetFloat("MoveY", lastMoveDirection.y);
         anim.SetFloat("MoveMagnitude", lastMoveDirection.magnitude);
-        anim.SetFloat("LastMoveX", lastMoveDirection.x);
-        anim.SetFloat("LastMoveY", lastMoveDirection.y);
+       
 
-        
+        if (rb.velocity != Vector2.zero)
+        {
+            anim.SetFloat("LastMoveX", lastMoveDirection.x);
+            anim.SetFloat("LastMoveY", lastMoveDirection.y);
+        }
 
     }
 
@@ -109,7 +113,7 @@ public class PlayerMoveScript : MonoBehaviour
         if (anim.GetFloat("MoveX") == -1)
         { facingLeft = true; }
 
-        if (anim.GetFloat("MoveX") == 1 || anim.GetFloat("MoveX") == 0)
+        if (anim.GetFloat("MoveX") == 1)
         { facingLeft = false; }
 
 
