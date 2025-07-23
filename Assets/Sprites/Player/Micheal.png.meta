@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d73d6a0eaee5219418cc12582ead04b9
+guid: 0f235b4e7478fb941854dd54ce6709ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -73,8 +73,8 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-    compressionQuality: 100
-    crunchedCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -93,24 +93,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_0
+      name: Micheal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d73d37cf08a247d6ba90a21178d0f91
-      internalID: -1407349529
+      spriteID: c535555ebbd1def42a8c2b26fd7426cf
+      internalID: -1441299670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_1
+      name: Micheal_1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 092e0cdd44a2c4fcf8bbdc302bf71501
-      internalID: 113491773
+      spriteID: f951356c90d0e0148826f47ff95263b2
+      internalID: -182988787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_2
+      name: Micheal_2
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1017886c2805a4757ae68f1e4dfc5554
-      internalID: -1864693952
+      spriteID: bffe0186c47132143982cd1df901c59a
+      internalID: 1083803755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_3
+      name: Micheal_3
       rect:
         serializedVersion: 2
         x: 96
@@ -187,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eed47889ad7b4069ac91c3392068995
-      internalID: -976017831
+      spriteID: 7bbe3a40a89bb5e488f34e9abbd1c638
+      internalID: 90948282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_4
+      name: Micheal_4
       rect:
         serializedVersion: 2
         x: 128
@@ -208,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25d06e3a97b84e35ab0423df9481a7c
-      internalID: 947957328
+      spriteID: 2fdbfbc822317a948911b11b08496c62
+      internalID: 355816208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_5
+      name: Micheal_5
       rect:
         serializedVersion: 2
         x: 160
@@ -229,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2607342752b547039e04780b7e68469
-      internalID: 510760701
+      spriteID: 60ad77f15059297409a460ebe352cbac
+      internalID: 1709022445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_6
+      name: Micheal_6
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb314c63bd8ad437fbf9d32313604ca2
-      internalID: 884177886
+      spriteID: a70f5c63d5b2a484bb240b2038f002bc
+      internalID: -1082160069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_7
+      name: Micheal_7
       rect:
         serializedVersion: 2
         x: 32
@@ -271,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f518f34900b1646ee8d0c4c2a5a5d87e
-      internalID: 825325631
+      spriteID: ebfa88d780bedf84fa52eeb46cebc4a7
+      internalID: -132789405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_8
+      name: Micheal_8
       rect:
         serializedVersion: 2
         x: 64
@@ -292,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e7fe733b2b714da790f9514b57fe7a0
-      internalID: -1398224950
+      spriteID: 404424afafc15d144938c67d2ec3d09a
+      internalID: -595441512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_9
+      name: Micheal_9
       rect:
         serializedVersion: 2
         x: 96
@@ -313,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 680d8f1adcb234f3ebc596481612c2e1
-      internalID: -216175708
+      spriteID: aea1047b8dacba44e9559b6b6a0a337e
+      internalID: 1144545754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_10
+      name: Micheal_10
       rect:
         serializedVersion: 2
         x: 128
@@ -334,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1d7a0f8a02be4fc795ceb19663351d2
-      internalID: -397101115
+      spriteID: d9dcfccc79a14a048a843be2054e0d21
+      internalID: 198481398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_11
+      name: Micheal_11
       rect:
         serializedVersion: 2
         x: 160
@@ -355,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22740ad642adc4c0b951588b56a1acc5
-      internalID: -655134692
+      spriteID: 3d772d19adcb8db46a51ce4d0a7c7cec
+      internalID: -621551805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_12
+      name: Micheal_12
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eebe66e1297d4568acc4028dc2d7e5f
-      internalID: 1143184401
+      spriteID: 5f42b224047264645ac092a7e0c67eba
+      internalID: -1144733450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_13
+      name: Micheal_13
       rect:
         serializedVersion: 2
         x: 32
@@ -397,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3319971c95c945b59140d4c9a8efe04
-      internalID: 1129504270
+      spriteID: d198ebbf1cb664248b6cd5d4be9fce1c
+      internalID: -651779317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_14
+      name: Micheal_14
       rect:
         serializedVersion: 2
         x: 64
@@ -418,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 047e47b00d64549529552fa201dfa0b5
-      internalID: -811582518
+      spriteID: 591e21f49885c5643a928041ae7af087
+      internalID: 382457909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_15
+      name: Micheal_15
       rect:
         serializedVersion: 2
         x: 96
@@ -439,14 +426,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a254aacff75a6481b8c66cb6edd65b98
-      internalID: -1393663276
+      spriteID: 59287875eec674f4e9d1b5c543eb0207
+      internalID: 224385725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_16
+      name: Micheal_16
       rect:
         serializedVersion: 2
         x: 128
@@ -460,14 +447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76590218531e04b75b875b321a03ab29
-      internalID: -1643878266
+      spriteID: d4d22f5db4e39ec40a8ca1e906838c26
+      internalID: -1518245326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_17
+      name: Micheal_17
       rect:
         serializedVersion: 2
         x: 160
@@ -481,14 +468,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26568af688fa54e778107fd99d037125
-      internalID: -1476609616
+      spriteID: 0a5de05ddc1028143bb54b2888619d45
+      internalID: -362077318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_18
+      name: Micheal_18
       rect:
         serializedVersion: 2
         x: 0
@@ -502,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52b7f0b40060b472cbffdfe6bf75903c
-      internalID: -431997722
+      spriteID: 98b303ede4688fd4e8718d52ee71f0f5
+      internalID: 1760453459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_19
+      name: Micheal_19
       rect:
         serializedVersion: 2
         x: 32
@@ -523,14 +510,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4617f3ec86724935bb9f8575a6ee96f
-      internalID: -341940670
+      spriteID: 2f75b3a3b00ecaf45acaeea694ff880f
+      internalID: 504706049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_20
+      name: Micheal_20
       rect:
         serializedVersion: 2
         x: 64
@@ -544,14 +531,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 442098665bf2d456a8afd05e13d80ea4
-      internalID: -238313302
+      spriteID: dc1972f83758a824880bf0ae55850254
+      internalID: 1182126279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_21
+      name: Micheal_21
       rect:
         serializedVersion: 2
         x: 96
@@ -565,14 +552,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b16aa8d5886d74980abf7b54907fb136
-      internalID: 2038500166
+      spriteID: 9651052a4cdcd80488552e3e8246bb0e
+      internalID: 1515356025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_22
+      name: Micheal_22
       rect:
         serializedVersion: 2
         x: 128
@@ -586,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d715711ede414e6287af38d5cce9fa3
-      internalID: -1944937554
+      spriteID: bb4d6aa7675e1bb4a969e1bf45ba2a2b
+      internalID: -438999049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UpdatedLoonaSprites_23
+      name: Micheal_23
       rect:
         serializedVersion: 2
         x: 160
@@ -607,8 +594,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1edc20746fa94a8c88cfe414cd35d96
-      internalID: -1227181515
+      spriteID: 7a350d1365d5bd04d8f7b82aac992810
+      internalID: 62692158
       vertices: []
       indices: 
       edges: []
@@ -624,30 +611,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UpdatedLoonaSprites_0: -1407349529
-      UpdatedLoonaSprites_1: 113491773
-      UpdatedLoonaSprites_10: -397101115
-      UpdatedLoonaSprites_11: -655134692
-      UpdatedLoonaSprites_12: 1143184401
-      UpdatedLoonaSprites_13: 1129504270
-      UpdatedLoonaSprites_14: -811582518
-      UpdatedLoonaSprites_15: -1393663276
-      UpdatedLoonaSprites_16: -1643878266
-      UpdatedLoonaSprites_17: -1476609616
-      UpdatedLoonaSprites_18: -431997722
-      UpdatedLoonaSprites_19: -341940670
-      UpdatedLoonaSprites_2: -1864693952
-      UpdatedLoonaSprites_20: -238313302
-      UpdatedLoonaSprites_21: 2038500166
-      UpdatedLoonaSprites_22: -1944937554
-      UpdatedLoonaSprites_23: -1227181515
-      UpdatedLoonaSprites_3: -976017831
-      UpdatedLoonaSprites_4: 947957328
-      UpdatedLoonaSprites_5: 510760701
-      UpdatedLoonaSprites_6: 884177886
-      UpdatedLoonaSprites_7: 825325631
-      UpdatedLoonaSprites_8: -1398224950
-      UpdatedLoonaSprites_9: -216175708
+      Micheal_0: -1441299670
+      Micheal_1: -182988787
+      Micheal_10: 198481398
+      Micheal_11: -621551805
+      Micheal_12: -1144733450
+      Micheal_13: -651779317
+      Micheal_14: 382457909
+      Micheal_15: 224385725
+      Micheal_16: -1518245326
+      Micheal_17: -362077318
+      Micheal_18: 1760453459
+      Micheal_19: 504706049
+      Micheal_2: 1083803755
+      Micheal_20: 1182126279
+      Micheal_21: 1515356025
+      Micheal_22: -438999049
+      Micheal_23: 62692158
+      Micheal_3: 90948282
+      Micheal_4: 355816208
+      Micheal_5: 1709022445
+      Micheal_6: -1082160069
+      Micheal_7: -132789405
+      Micheal_8: -595441512
+      Micheal_9: 1144545754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

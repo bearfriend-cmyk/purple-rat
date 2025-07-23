@@ -20,8 +20,8 @@ public class PlayerMoveScript : MonoBehaviour
     private bool facingLeft;
     private float default_speed;
     private float max_speed;
-    private bool isDashing = false;
-    private bool dash_CD = false;
+    private bool busy = false;
+    private bool running = false;
 
 
     private float CD_TIME;
@@ -55,7 +55,7 @@ public class PlayerMoveScript : MonoBehaviour
         ProcessInputs();
         Animate();
         Flip();
-        Dash();
+     
         
         
     }
@@ -70,11 +70,16 @@ public class PlayerMoveScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if (!isDashing) { moveSpeed = max_speed; }
+
+            running = !running;
+
+            if (!running)
+            { { moveSpeed = default_speed; } }
+            else
+            { { moveSpeed = max_speed; } }
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        { if (!isDashing) { moveSpeed = default_speed; } }
+    
 
         newMoveDirection.x = (Input.GetAxisRaw("Horizontal") * moveSpeed);
         newMoveDirection.y = (Input.GetAxisRaw("Vertical") * moveSpeed);
@@ -123,48 +128,16 @@ public class PlayerMoveScript : MonoBehaviour
         // else facingUp = false;
     }
 
-    void Dash()
-    {
-        if (Input.GetKeyDown(KeyCode.Q) && !dash_CD)
-        {
-            dash_CD = true;
-            isDashing = true;
-            CD_TIME = 0.15f;
-
-            last_speed = moveSpeed;
-
-            moveSpeed = dash_speed;
-            
-
-            StartCoroutine(Dash_Time());
-            CD_TIME = 3f;
-
-            StartCoroutine(Cooldown());
-            StartCoroutine(Dash_Cooldown());
-        }
-    }
-
+   
     public IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(CD_TIME);
         CD_TIME = 0f;
+        if (busy) { busy = false; }
     }
 
 
-    public IEnumerator Dash_Time()
-    {
-        yield return new WaitForSeconds(CD_TIME);
-        isDashing = false;
-        moveSpeed = last_speed;
-
-    }
-
-    public IEnumerator Dash_Cooldown()
-    {
-        yield return new WaitForSeconds(CD_TIME);
-        dash_CD = false;
-    }
-
+ 
     void Flip()
     {
         
